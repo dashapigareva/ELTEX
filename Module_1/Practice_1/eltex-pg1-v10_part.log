@@ -1,0 +1,256 @@
+Script started on 2026-10-11 20:34:45+07:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ whoami
+[?2004leltex-pg1-v10
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ ls
+ls           lsb_release  lsinitramfs  lslocks      lsmod        lspci
+lsattr       lscpu        lsipc        lslogins     lsns         lsusb
+lsblk        lsfd         lsirq        lsmem        lsof         
+eltex-pg1-v10@eltex-2026-autumn:~$ ls[K[Kecho $HIST
+$HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE
+eltex-pg1-v10@eltex-2026-autumn:~$ echo $HIST[Keltex-pg1-v10@eltex-2026-autumn:~$ echo $HIST[Keltex-pg1-v10@eltex-2026-autumn:~$ echo $HIST[K[K[Kшые[K[K[K[KHISTSIZE
+[?2004l1000
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ echo $HISTFILESIZE
+[?2004l2000
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ command ls A[K-a[KA --c[Kolo[K[K[Kcolor=never ~ | grep '^|.[K[K\.'
+[?2004l.bash_history
+.bash_logout
+.bashrc
+.config
+.profile
+.viminfo
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ export HISTTIMEFORMAT='%F %T '
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ history | tail -n 10
+[?2004l   16  2026-10-11 20:34:45 screen -r top
+   17  2026-10-11 20:34:45 screen -ls
+   18  2026-10-11 20:34:45 screen -S 31547 -X quit
+   19  2026-10-11 20:34:45 screen -ls
+   20  2026-10-11 20:34:57 whoami
+   21  2026-10-11 20:43:10 echo $HISTSIZE
+   22  2026-10-11 20:44:03 echo $HISTFILESIZE
+   23  2026-10-11 20:46:49 command ls -A --color=never ~ | grep '^\.'
+   24  2026-10-11 20:48:21 export HISTTIMEFORMAT='%F %T '
+   25  2026-10-11 20:48:37 history | tail -n 10
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ date
+[?2004lSun Oct 11 08:51:29 PM +07 2026
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ history | tail -n 5
+[?2004l   23  2026-10-11 20:46:49 command ls -A --color=never ~ | grep '^\.'
+   24  2026-10-11 20:48:21 export HISTTIMEFORMAT='%F %T '
+   25  2026-10-11 20:48:37 history | tail -n 10
+   26  2026-10-11 20:51:29 date
+   27  2026-10-11 20:51:48 history | tail -n 5
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ tail -n 20 "$HISTFILE"
+[?2004lscreen
+screen -S top -d -m top
+screen -ls
+screen -r top
+screen -S editor
+screen -ls
+logout
+vi report_part1.txt
+exit
+Подсоединитесь к сессии top.
+watch /usr/bin/vmstat
+exit
+w
+screen -ls
+screen -r editor
+screen -r top
+screen -ls
+screen -S 31547 -X quit
+screen -ls
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ echo "PROMPT_COMMAND=$PROMT[KPT_COMMAAM[K[K[KAND"
+[?2004lPROMPT_COMMAND=
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ export PROMPT_COMMAND='history -a'[K; history -n ;[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn '
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ date
+[?2004lSun Oct 11 08:58:20 PM +07 2026
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ history | tail -n 5
+[?2004l   28  2026-10-11 20:52:30 tail -n 20 "$HISTFILE"
+   29  2026-10-11 20:56:40 echo "PROMPT_COMMAND=$PROMPT_COMMAND"
+   30  2026-10-11 20:57:53 export PROMPT_COMMAND='history -a; history -n'
+   31  2026-10-11 20:58:20 date
+   32  2026-10-11 20:58:34 history | tail -n 5
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ tail -n 20 "$HISTFILE"
+[?2004l#1791726409
+command ls -A --color=never ~ | grep '^\.'
+#1791726501
+export HISTTIMEFORMAT='%F %T '
+#1791726517
+history | tail -n 10
+#1791726689
+date
+#1791726708
+history | tail -n 5
+#1791726750
+tail -n 20 "$HISTFILE"
+#1791727000
+echo "PROMPT_COMMAND=$PROMPT_COMMAND"
+#1791727073
+export PROMPT_COMMAND='history -a; history -n'
+#1791727100
+date
+#1791727114
+history | tail -n 5
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ DATE [K=$(date ,[K,[K+%F)
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ echo "$DATE"
+[?2004l2026-10-11
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ TIME=$(date +%T)
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ echo "$TIME"
+[?2004l21:01:58
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ DATE_TIME="$DATE $TIME"
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ echo "$DATE_TIME"
+[?2004l2026-10-11 21:01:58
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ find \[K/bin \b[Ksbin[K[K[K[K[K[K /sbin -maxdepth 1 -typr[Ke f -name '*[ 0-9}[K]*' -printf '%f\n' 2>/dev/null | sort -u
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ [3mfind /bin /sbin -maxdepth 1 -type f -name '*[[23m[3m0[23m[3m-9]*' -printf '%f\n' 2>/dev/null | sort -u[23mMfind /bin /sbin -maxdepth 1 -type f -name '*[0-9]*' -printf '%f\n' 2>/dev/null | sort -u
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ [Keltex-pg1-v10@eltex-2026-autumn:~$ [3mfind /bin /sbin -maxdepth 1 -name '*[0-9]*' -printf '%y %f\n' 2>/dev/null | head[23m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /bin /sbin -maxdepth 1 -name '*[0-9]*' -printf '%y %f\n' 2>/dev/null | head
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ [3mfind /bin /sbin -maxdepth 1 \( -type f -o -type l \) -name '*[0-9]*' -printf '%f\n' 2>/dev/null | sort -u[23m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /bin /sbin -maxdepth 1 \( -type f -o -type l \) -name '*[0-9]*' -printf '%f\n' 2>/dev/null | sort -u
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ [Keltex-pg1-v10@eltex-2026-autumn:~$ [3mfind /bin /sbin -maxdepth 1 -name '*[0-9]*' -[23m[3mp[23m[3mrint | head -n 20[23mM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /bin /sbin -maxdepth 1 -name '*[0-9]*' -print | head -n 20
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ [3mls -1 /bin /sbin 2>/dev/null | grep -E '[0-9][23m[3m'[23m[3m | sort -u[23mM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -1 /bin /sbin 2>/dev/null | grep -E '[0-9]' | sort -u
+[?2004laddr2line
+b2sum
+base32
+base64
+bunzip2
+bzip2
+bzip2recover
+c89
+c89-gcc
+c99
+c99-gcc
+cpan5.36-x86_64-linux-gnu
+cpp-12
+diff3
+dumpe2fs
+e2freefrag
+e2fsck
+e2image
+e2label
+e2mmpstatus
+e2scrub
+e2scrub_all
+e2undo
+e4crypt
+e4defrag
+enc2xs
+fsck.ext2
+fsck.ext3
+fsck.ext4
+gcc-12
+gcc-ar-12
+gcc-nm-12
+gcc-ranlib-12
+gcov-12
+gcov-dump-12
+gcov-tool-12
+grub-menulst2cfg
+grub-mkpasswd-pbkdf2
+grub-syslinux2cfg
+h2ph
+h2xs
+i386
+killall5
+linux32
+linux64
+lto-dump-12
+md5sum
+md5sum.textutils
+mke2fs
+mkfs.ext2
+mkfs.ext3
+mkfs.ext4
+pdb3
+pdb3.11
+perl5.36.0
+perl5.36-x86_64-linux-gnu
+ping4
+ping6
+pl2pm
+pod2html
+pod2man
+pod2text
+pod2usage
+py3clean
+py3compile
+py3versions
+pydoc3
+pydoc3.11
+pygettext3
+pygettext3.11
+python3
+python3.11
+resize2fs
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+ssh-argv0
+systemd-id128
+traceroute6
+traceroute6.db
+tune2fs
+update-grub2
+x86_64
+x86_64-linux-gnu-addr2line
+x86_64-linux-gnu-ar
+x86_64-linux-gnu-as
+x86_64-linux-gnu-c++filt
+x86_64-linux-gnu-cpp
+x86_64-linux-gnu-cpp-12
+x86_64-linux-gnu-dwp
+x86_64-linux-gnu-elfedit
+x86_64-linux-gnu-gcc
+x86_64-linux-gnu-gcc-12
+x86_64-linux-gnu-gcc-ar
+x86_64-linux-gnu-gcc-ar-12
+x86_64-linux-gnu-gcc-nm
+x86_64-linux-gnu-gcc-nm-12
+x86_64-linux-gnu-gcc-ranlib
+x86_64-linux-gnu-gcc-ranlib-12
+x86_64-linux-gnu-gcov
+x86_64-linux-gnu-gcov-12
+x86_64-linux-gnu-gcov-dump
+x86_64-linux-gnu-gcov-dump-12
+x86_64-linux-gnu-gcov-tool
+x86_64-linux-gnu-gcov-tool-12
+x86_64-linux-gnu-gold
+x86_64-linux-gnu-gp-archive
+x86_64-linux-gnu-gp-collect-app
+x86_64-linux-gnu-gp-display-html
+x86_64-linux-gnu-gp-display-src
+x86_64-linux-gnu-gp-display-text
+x86_64-linux-gnu-gprof
+x86_64-linux-gnu-gprofng
+x86_64-linux-gnu-ld
+x86_64-linux-gnu-ld.bfd
+x86_64-linux-gnu-ld.gold
+x86_64-linux-gnu-lto-dump
+x86_64-linux-gnu-lto-dump-12
+x86_64-linux-gnu-nm
+x86_64-linux-gnu-objcopy
+x86_64-linux-gnu-objdump
+x86_64-linux-gnu-ranlib
+x86_64-linux-gnu-readelf
+x86_64-linux-gnu-size
+x86_64-linux-gnu-strings
+x86_64-linux-gnu-strip
+[?2004heltex-pg1-v10@eltex-2026-autumn:~$ [Keltex-pg1-v10@eltex-2026-autumn:~$ [Keltex-pg1-v10@eltex-2026-autumn:~$ учзщ[K[K[K[Kexport PS![K1='$Y[KUSER@$HOSTNAME-$(date +%H:%M)> ' M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn-21:23> export PS1
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn-21:24> bash
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn:~$ exit
+[?2004lexit
+[?2004heltex-pg1-v10@eltex-2026-autumn-21:24> иф[K[Kbash --norc
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn-21:28> exit
+[?2004lexit
+[?2004heltex-pg1-v10@eltex-2026-autumn-21:28> mkdir -p ~/"$(date +%Y)" -[K[K-{01/[K..12}
+[?2004l[?2004heltex-pg1-v10@eltex-2026-autumn-21:30> ls -d ~\[K/"$(date +%Y)"-*
+[?2004l[0m[01;34m/home/eltex-pg1-v10/2026-01[0m  [01;34m/home/eltex-pg1-v10/2026-07[0m
+[01;34m/home/eltex-pg1-v10/2026-02[0m  [01;34m/home/eltex-pg1-v10/2026-08[0m
+[01;34m/home/eltex-pg1-v10/2026-03[0m  [01;34m/home/eltex-pg1-v10/2026-09[0m
+[01;34m/home/eltex-pg1-v10/2026-04[0m  [01;34m/home/eltex-pg1-v10/2026-10[0m
+[01;34m/home/eltex-pg1-v10/2026-05[0m  [01;34m/home/eltex-pg1-v10/2026-11[0m
+[01;34m/home/eltex-pg1-v10/2026-06[0m  [01;34m/home/eltex-pg1-v10/2026-12[0m
+[?2004heltex-pg1-v10@eltex-2026-autumn-21:31> учше[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2026-10-11 21:33:54+07:00 [COMMAND_EXIT_CODE="0"]
